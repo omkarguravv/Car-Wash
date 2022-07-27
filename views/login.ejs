@@ -1,0 +1,19 @@
+<%-include('partials/header') %>
+  <div class="login">
+    <div class="form">
+    <h1>Login</h1>
+    <form action="/login" method="post">
+      <div class="inputs">
+        <label for="email">Email</label>
+        <input type="email" name="email">
+        <label for="password">Password</label>
+        <input type="password" name="password">
+      </div>
+      <button class="button" type="submit" name="button">Login</button>
+    </form>
+    <p>Don't have an account? <a href="/register">Create One</a></p>
+    </div>
+    <div class="black"> </div>
+    <img class="bg-img" src="../images/bg-img.png" alt="bg">
+  </div>
+<%-include('partials/footer') %>
