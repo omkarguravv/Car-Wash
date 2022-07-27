@@ -26,8 +26,5 @@ app.get('/login',function(req,res) {
 app.get('/register',function(req,res) {
     res.render('register');
 });
-app.get('/plans',function(req,res) {
-    res.render('plans');
-});
 
 app.listen(3000, () => console.log('App is running'));
