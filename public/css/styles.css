@@ -99,7 +99,7 @@ span {
 }
 
 
-/* services */
+/* services plans*/
 .services {
   width: 100%;
   height: 88vh;
@@ -111,12 +111,6 @@ span {
   overflow-x: hidden;
 }
 
-/* Plans */
-.plans-main {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-}
 
 .plan-section {
   display: flex;
