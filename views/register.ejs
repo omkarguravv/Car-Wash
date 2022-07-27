@@ -1,5 +1,20 @@
 <%-include('partials/header') %>
   <div class="register">
-
+    <div class="form">
+    <h1>Re<span>Gi</span>ster</h1>
+    <form action="/register" method="post">
+      <div class="inputs">
+        <label for="email">Email</label>
+        <input type="email" name="email">
+        <label for="password">Password</label>
+        <input type="password" name="password">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" name="confirm-password">
+      </div>
+      <button class="button" type="submit" name="button">Register</button>
+    </form>
+    </div>
+    <div class="black"> </div>
+    <img class="bg-img" src="../images/bg-img.png" alt="bg">
   </div>
 <%-include('partials/footer') %>
