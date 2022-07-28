@@ -1,0 +1,31 @@
+<%-include('partials/header') %>
+    <div class="booking">
+        <div class="form">
+            <h1><span>B</span>ook a Servi<span>Ce</span></h1>
+            <form class="booking-form" action="/booking" method="post">
+                <div class="inputs">
+                    <label for="pincode">Pincode</label>
+                    <input type="pincode" name="pincode">
+
+                    <label for="name">Name</label>
+                    <input type="text" name="name">
+
+                    <label for="phone">Enter a phone number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{5}[0-9]{5}" required>
+
+                    <label for="car-name">Model-Name</label>
+                    <input type="text" name="car-name" pattern="[A-Z]{5}[0-9]{5}" required>
+
+                    <label for="date">Select Date</label>
+                    <input type="date"  name="date" value="2022-07-28"
+                    min="2022-01-01" max="2022-12-31">
+                    
+                </div>
+            </form>
+                <button class="button" type="submit" name="button">Book Now</button>
+           
+        </div>
+        <div class="black"> </div>
+        <img class="bg-img" src="../images/bg-img.png" alt="bg">
+    </div>
+    <%-include('partials/footer') %>
