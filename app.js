@@ -30,4 +30,16 @@ app.get('/booking',function(req,res) {
     res.render('booking');
 });
 
-app.listen(3000, () => console.log('App is running'));
+app.post('/login' , function(req,res) {
+  res.redirect('/booking');
+})
+
+app.post('/register' , function(req,res) {
+  res.redirect('/login');
+})
+
+app.post('/booking', function(req,res) {
+  res.send('<h1>Thanks for booking our sevices</h1><br><a href="/">Go to HomePage</a>')
+})
+
+app.listen(process.env.PORT || 3000, () => console.log('App is running'));
